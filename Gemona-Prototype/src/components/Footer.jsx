@@ -4,9 +4,8 @@ export default function Footer(){
     return(
         <>
         <footer>
-            <button><Link to="contact">Ajuda</Link></button>
-            <button><Link to="contact">Contatos - Fale Conosco</Link></button>
-            <button><Link to="contact">Sobre nós</Link></button>
+        <Link to="contact"><button>Ajuda</button></Link>
+        <Link to="contact"><button>Sobre nós</button></Link>
         </footer>
         </>
     )
