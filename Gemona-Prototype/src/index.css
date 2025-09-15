@@ -137,6 +137,38 @@ ul {
   text-align: left;
 }
 
+.filter-section label {
+  display: inline-block;
+  font-size: 1rem;
+  margin-right: 0.2em;
+  margin-bottom: 0.05em;
+  vertical-align: middle;
+}
+
+.filter-section input[type="checkbox"] {
+  accent-color: #15616d;
+  width: 15px;
+  height: 15px;
+  border-radius: 4px;
+  border: 2px solid #15616d;
+  margin-left: 0.15em;
+  margin-right: 0.4em;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.filter-section input[type="checkbox"]:focus {
+  box-shadow: 0 0 0 2px #f48f42;
+}
+
+.weekdays, .shifts {
+  margin-bottom: 0.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1rem;
+}
+
 .category-list {
   display: flex;
   flex-wrap: wrap;
