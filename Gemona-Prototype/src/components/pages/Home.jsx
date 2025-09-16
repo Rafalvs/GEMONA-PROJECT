@@ -6,7 +6,7 @@ export default function Home(){
     return(
         <>
             <Header />
-                <main>
+                <main id="home">
                     <h2>Categorias</h2>
                     <ul className="category-list">
                         <li><Link to="/services">Alimentício</Link></li>

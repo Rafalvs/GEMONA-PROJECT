@@ -8,15 +8,18 @@ export default function Login(){
         <>
             <Header />
                 <main>
-                    <form>
-                        <label htmlFor="userInput">Usuário</label> <br />
-                        <input name="userInput" id="userInput" type="text" /> <br />
-                        <label htmlFor="userInput">Senha</label> <br />
-                        <input name="passwordInput" id="userInput" type="password" /> <br />
-
-                        <button><Link to="/">Entrar</Link></button> <br />
-                        <button>Esqueceu a senha?</button> <br />
-                        <button><Link to="../register">Cadastre-se</Link></button>
+                    <form className="form-center">
+                        <div className="form-group">
+                            <label htmlFor="userInput">Usuário</label>
+                            <input name="userInput" id="userInput" type="text" />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="passwordInput">Senha</label>
+                            <input name="passwordInput" id="passwordInput" type="password" />
+                        </div>
+                        <Link to="/"><button>Entrar</button></Link>
+                        <button>Esqueceu a senha?</button>
+                        <Link to="/register"><button>Cadastre-se</button></Link>
                     </form>
                 </main>
             <Footer />
