@@ -12,9 +12,9 @@
 .filters {
   min-width: 260px;
   background: #ffffff;
-  color:#05315f;
+  color: #05315f;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   padding: 2rem 1rem;
   text-align: left;
 }
@@ -30,7 +30,7 @@
 .service-box {
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
@@ -87,7 +87,7 @@ label {
   align-items: center;
   font-size: 1rem;
 }
-    
+
 :root {
   --primary-bg: #05315f;
   --header-footer-bg: #ffecd1;
@@ -95,11 +95,11 @@ label {
   --primary-btn-hover: #f48f42;
   --link-color: #ffecd1;
   --link-hover: #e5e5e5;
-  
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  
+
   color-scheme: light dark;
   background-color: var(--primary-bg);
 }
@@ -164,7 +164,8 @@ header {
   gap: 0.5em;
 }
 
-header, footer {
+header,
+footer {
   background-color: var(--header-footer-bg);
   color: black;
   padding: 14px 16px;
@@ -176,6 +177,7 @@ a {
   font-weight: 500;
   text-decoration: inherit;
 }
+
 a:hover {
   color: var(--link-hover);
 }
@@ -187,7 +189,7 @@ a:hover {
 }
 
 
-input{
+input {
   border: 0;
   outline: 0;
   color: rgb(60, 66, 87);
@@ -207,7 +209,7 @@ input{
   transition-delay: 0s, 0s;
 }
 
-  
+
 button {
   color: white;
   border-radius: 8px;
@@ -226,7 +228,8 @@ button:visited {
   color: #e5e5e5;
 }
 
-input:hover, button:hover {
+input:hover,
+button:hover {
   border-color: #f48f42;
   box-shadow: #f48f42 0 0 6px;
 }
@@ -239,17 +242,17 @@ button:focus-visible {
 ul {
   display: inline-block;
   gap: 1rem;
-  list-style: none; 
+  list-style: none;
   padding: 0;
   margin: 1% 4% 1px 4%;
 }
 
-.filter-section{
+.filter-section {
   text-align: left;
 }
 
 .filter-section label {
-  color:#05315f;
+  color: #05315f;
   display: inline-block;
   font-size: 1rem;
   margin-right: 0.2em;
@@ -270,7 +273,8 @@ ul {
   transition: box-shadow 0.2s;
 }
 
-.weekdays, .shifts {
+.weekdays,
+.shifts {
   margin-bottom: 0.1rem;
   display: flex;
   flex-wrap: wrap;
@@ -285,14 +289,29 @@ ul {
   gap: 1rem;
   list-style: none;
   padding: 0;
-  margin: 1% 4% 2.5em 4%; /* aumenta o espaçamento inferior */
+  margin: 1% 4% 2.5em 4%;
+  /* aumenta o espaçamento inferior */
   justify-content: center;
 }
 
 .category-list li {
+  display: flex;
+  gap: 5px;
   padding: 0.5em 0.5em;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  justify-content: center;
+  align-items: center;
+  color: #ffecd1;
+  background: #07284b;
+  border-radius: .7rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
+
+.category-list li:hover {
+  background-color: rgb(2, 22, 43);
+  transition: all;
+  transition-duration: 500ms;
+}
+
 
 h2 {
   font-size: 2rem;
@@ -314,6 +333,7 @@ header a button {
   font-size: 1em;
 }
 
-label, p {
+label,
+p {
   color: white;
 }

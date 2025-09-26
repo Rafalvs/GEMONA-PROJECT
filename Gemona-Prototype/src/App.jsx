@@ -2,19 +2,19 @@ import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-rou
 
 import Contact from "./components/pages/Contact";
 import Checkout from "./components/pages/Checkout";
-import Home from "./components/pages/Home";
 import Login from "./components/pages/Login";
 import Profile from "./components/pages/Profile";
 import Register from "./components/pages/Register";
 import CreateBusiness from './components/pages/CreateBusiness';
 import Services from "./components/pages/Services";
-  
-export default function App(){
+import HomePage from './components/pages/Home';
+
+export default function App() {
     return (
         <Router>
             <Routes>
                 <Route>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<HomePage />} />
                     <Route path="contact" element={<Contact />} />
                     <Route path="profile" element={<Profile />} />
                     <Route path="checkout" element={<Checkout />} />
@@ -26,4 +26,4 @@ export default function App(){
             </Routes>
         </Router>
     )
-  }
+}
