@@ -54,7 +54,7 @@ export default function Services() {
                         <h3>Distância</h3>
                         <div>
                             <span>Distância: {distance} km</span>
-                            <input type="range" min={1} max={20} value={distance} onChange={e => setDistance(e.target.value)} className="ml-1" />
+                            <input className="range-input" type="range" min={1} max={100} value={distance} onChange={e => setDistance(e.target.value)} />
                         </div>
                     </section>
 

@@ -6,16 +6,16 @@ export default function Header() {
   const navigate = useNavigate();
   const location = useLocation();
   const [searchValue, setSearchValue] = useState('');
-  // Verifica se está nas páginas de login ou cadastro
+
   const hideAuthButtons = location.pathname === '/login' || location.pathname === '/register';
 
   const handleSearch = (e) => {
-    // Only navigate if Enter is pressed and there's a search value
-    if (e.key === 'Enter' && searchValue.trim() !== '') {
+   
+    if (e.key === 'Enter') {
       e.preventDefault();
-      // Route to /services with a query parameter 'q'
+    
       navigate(`/services?q=${encodeURIComponent(searchValue.trim())}`);
-      setSearchValue(''); // Clear the search input after navigation
+      setSearchValue('');
     }
   };
 
@@ -30,9 +30,10 @@ export default function Header() {
         <div className="header-center">
           <input
             type="text"
+            className='busca-input'
             placeholder="Busca"
-            value={searchValue} // Bind input value to state
-            onChange={(e) => setSearchValue(e.target.value)} // Update state on change
+            value={searchValue} 
+            onChange={(e) => setSearchValue(e.target.value)}
             onKeyDown={handleSearch}
           />
         </div>
@@ -44,7 +45,7 @@ export default function Header() {
               </Link>
               <Link to="/register">
                 <button>Cadastro</button>
-              </Link>
+              </Link> 
             </>
           )}
         </div>
