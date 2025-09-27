@@ -229,12 +229,6 @@ button:visited {
   color: #e5e5e5;
 }
 
-input:hover,
-button:hover {
-  border-color: #f48f42;
-  box-shadow: #f48f42 0 0 6px;
-}
-
 button:focus,
 button:focus-visible {
   outline: 8px auto -webkit-focus-ring-color;

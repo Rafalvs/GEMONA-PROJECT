@@ -261,4 +261,5 @@ export const mostSearchedServices = [
         description:
             "Confecção e ajuste de roupas sob medida, reparos e reformas de vestuário.",
     },
+    
 ]

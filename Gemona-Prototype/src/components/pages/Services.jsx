@@ -1,10 +1,32 @@
-import Header from "../Header"
-import Footer from "../Footer"
-import { useState } from "react";
+import Header from "../Header";
+import Footer from "../Footer";
+import { useState, useEffect } from "react"; // Import useEffect
 import { categories } from "../../config/mock-db";
+import { useSearchParams } from 'react-router-dom'; // Import useSearchParams
 
 export default function Services() {
     const [distance, setDistance] = useState(1);
+    const [searchParams] = useSearchParams(); // Hook to access query parameters
+    const [filteredServices, setFilteredServices] = useState(categories); // State for services to display
+
+    // Get the search query from the URL
+    const searchQuery = searchParams.get('q'); // Get the value of the 'q' parameter
+
+    useEffect(() => {
+        if (searchQuery) {
+            // Filter categories based on the search query
+            const lowerCaseQuery = searchQuery.toLowerCase();
+            const results = categories.filter(service =>
+                service.name.toLowerCase().includes(lowerCaseQuery) ||
+                service.description.toLowerCase().includes(lowerCaseQuery)
+            );
+            setFilteredServices(results);
+        } else {
+            // If no search query, display all categories
+            setFilteredServices(categories);
+        }
+    }, [searchQuery]); // Re-run this effect whenever the searchQuery changes
+
     return (
         <>
             <Header />
@@ -73,18 +95,23 @@ export default function Services() {
                     </section>
                 </aside>
                 <section className="services-grid">
-                    {categories.map((categorie, i) => (
-                        <div key={i} className="service-box">
-                            <div className="row">
-                                <categorie.icon />
-                                <h4>{categorie.name}</h4>
+                    {/* Render filteredServices instead of categories */}
+                    {filteredServices.length > 0 ? (
+                        filteredServices.map((categorie, i) => (
+                            <div key={i} className="service-box">
+                                <div className="row">
+                                    <categorie.icon /> {/* Assuming categorie.icon is a component */}
+                                    <h4>{categorie.name}</h4>
+                                </div>
+                                <p>{categorie.description}</p>
                             </div>
-                            <p>{categorie.description}</p>
-                        </div>
-                    ))}
+                        ))
+                    ) : (
+                        <p>Nenhum serviço encontrado para "{searchQuery}"</p>
+                    )}
                 </section>
             </main>
             <Footer />
         </>
-    )
+    );
 }
