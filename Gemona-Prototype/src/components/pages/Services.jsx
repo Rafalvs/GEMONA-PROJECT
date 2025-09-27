@@ -69,27 +69,47 @@ export default function Services() {
                     <section className="filter-section">
                         <h3>Horário</h3>
                         <div className="weekdays">
+
                             <input type="checkbox" id="domingo" />
+
                             <label htmlFor="domingo">Domingo</label>
+
                             <input type="checkbox" id="segunda" className="ml-05" />
+
                             <label htmlFor="segunda" className="ml-05">Segunda</label>
+
                             <input type="checkbox" id="terca" className="ml-05" />
+
                             <label htmlFor="terca" className="ml-05">Terça</label>
+
                             <input type="checkbox" id="quarta" className="ml-05" />
+
                             <label htmlFor="quarta" className="ml-05">Quarta</label>
+
                             <input type="checkbox" id="quinta" className="ml-05" />
+
                             <label htmlFor="quinta" className="ml-05">Quinta</label>
+
                             <input type="checkbox" id="sexta" className="ml-05" />
+
                             <label htmlFor="sexta" className="ml-05">Sexta</label>
+
                             <input type="checkbox" id="sabado" className="ml-05" />
+
                             <label htmlFor="sabado" className="ml-05">Sábado</label>
                         </div>
                         <div className="shifts">
+
                             <input type="checkbox" id="manha" />
+
                             <label htmlFor="manha">Manhã</label>
+
                             <input type="checkbox" id="tarde" className="ml-05" />
+
                             <label htmlFor="tarde" className="ml-05">Tarde</label>
+
                             <input type="checkbox" id="noite" className="ml-05" />
+
                             <label htmlFor="noite" className="ml-05">Noite</label>
                         </div>
                     </section>

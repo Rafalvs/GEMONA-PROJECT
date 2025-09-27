@@ -193,6 +193,8 @@ a:hover {
 input {
   border: 0;
   outline: 0;
+  width: 100%;
+  height: 100%;
   color: rgb(60, 66, 87);
   background-color: rgb(255, 255, 255);
   border-radius: 4px;
@@ -201,13 +203,12 @@ input {
   font-weight: 400;
   margin: 1%;
   padding: 4px 8px;
-  min-height: 28px;
   vertical-align: middle;
-  transition: background-color 0.24s ease, box-shadow 0.24s ease;
+  transition: background-color 0.64s ease, box-shadow 0.64s ease;
   transition-property: background-color, box-shadow;
-  transition-duration: 0.24s, 0.24s;
+  transition-duration: 0.14s, 0.14s;
   transition-timing-function: ease, ease;
-  transition-delay: 0s, 0s;
+  
 }
 
 
@@ -313,10 +314,13 @@ ul {
 .category-list li:hover {
   background-color: rgb(2, 22, 43);
   transition: all;
+  scale: 1.05;
   transition-duration: 500ms;
 }
 
-
+input:hover{
+  box-shadow: #f58f0b 0px 0px 13px 0px;
+}
 h2 {
   font-size: 2rem;
   font-weight: 700;
