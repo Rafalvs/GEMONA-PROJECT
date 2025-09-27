@@ -1,10 +1,11 @@
 import Header from "../Header"
 import Footer from "../Footer"
 import { useState } from "react";
+import { categories } from "../../config/mock-db";
 
-export default function Services(){
+export default function Services() {
     const [distance, setDistance] = useState(1);
-    return(
+    return (
         <>
             <Header />
             <main className="services-layout">
@@ -72,54 +73,15 @@ export default function Services(){
                     </section>
                 </aside>
                 <section className="services-grid">
-                    <div className="service-box">
-                        <h4>Engenheiro</h4>
-                        <p>Projetos, cálculos e acompanhamento de obras residenciais, comerciais e industriais.</p>
-                    </div>
-                    <div className="service-box">
-                        <h4>Cozinheira</h4>
-                        <p>Preparação de refeições, cardápios personalizados e serviços para eventos ou famílias.</p>
-                    </div>
-                    <div className="service-box">
-                        <h4>Manicure e Pedicure</h4>
-                        <p>Cuidados com unhas, esmaltação, design e tratamentos para mãos e pés.</p>
-                    </div>
-                    <div className="service-box">
-                        <h4>Personal Trainer</h4>
-                        <p>Treinos personalizados, acompanhamento físico e orientação para saúde e bem-estar.</p>
-                    </div>
-                    <div className="service-box">
-                        <h4>Cabeleireiros</h4>
-                        <p>Cortes, coloração, hidratação, penteados e tratamentos capilares.</p>
-                    </div>
-                    <div className="service-box">
-                        <h4>Nutricionista</h4>
-                        <p>Consultoria alimentar, planos nutricionais e acompanhamento de dietas.</p>
-                    </div>
-                    <div className="service-box">
-                        <h4>Dedetizador</h4>
-                        <p>Controle de pragas, desinsetização e serviços para residências e empresas.</p>
-                    </div>
-                    <div className="service-box">
-                        <h4>Motorista com Veículo Próprio</h4>
-                        <p>Transporte executivo, viagens, entregas e serviços personalizados.</p>
-                    </div>
-                    <div className="service-box">
-                        <h4>Assistência para Notebooks</h4>
-                        <p>Manutenção, reparos, upgrades e suporte técnico para notebooks.</p>
-                    </div>
-                    <div className="service-box">
-                        <h4>Bartenders</h4>
-                        <p>Preparação de drinks, coquetéis e atendimento em festas e eventos.</p>
-                    </div>
-                    <div className="service-box">
-                        <h4>Arquitetos</h4>
-                        <p>Projetos arquitetônicos, decoração, reformas e consultoria de ambientes.</p>
-                    </div>
-                    <div className="service-box">
-                        <h4>Criação de Logos</h4>
-                        <p>Design de logotipos, identidade visual e branding para empresas e profissionais.</p>
-                    </div>
+                    {categories.map((categorie, i) => (
+                        <div key={i} className="service-box">
+                            <div className="row">
+                                <categorie.icon />
+                                <h4>{categorie.name}</h4>
+                            </div>
+                            <p>{categorie.description}</p>
+                        </div>
+                    ))}
                 </section>
             </main>
             <Footer />
