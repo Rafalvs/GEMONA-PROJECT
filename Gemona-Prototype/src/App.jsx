@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 
-import Contact from "./components/pages/Contact";
-import Checkout from "./components/pages/Checkout";
-import Home from "./components/pages/Home";
-import Login from "./components/pages/Login";
-import Profile from "./components/pages/Profile";
-import Register from "./components/pages/Register";
-import CreateBusiness from './components/pages/CreateBusiness';
-import Services from "./components/pages/Services";
+import Contact from "./pages/Contact";
+import Checkout from "./pages/Checkout";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Profile from "./pages/Profile";
+import Register from "./pages/Register";
+import CreateBusiness from './pages/CreateBusiness';
+import Services from "./pages/Services";
   
 export default function App(){
     return (

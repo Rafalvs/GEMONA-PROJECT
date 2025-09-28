@@ -1,9 +1,9 @@
-import Header from "../Header"
+import Header from '../components/layout/Header'
 
-import insta from '../../assets/insta.png'
-import whjats from '../../assets/whjats.png'
-import face from '../../assets/face.png'
-import email from '../../assets/email.png'
+import insta from '../assets/insta.png'
+import whjats from '../assets/whjats.png'
+import face from '../assets/face.png'
+import email from '../assets/email.png'
 
 export default function Contact(){
     return(
