@@ -1,5 +1,7 @@
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 
+import Button from '../ui/Button';
+
 import logo from '../../assets/logo.png';
 
 export default function Header() {
@@ -26,8 +28,8 @@ export default function Header() {
         </div>
         <div className="header-right">
             <>
-              <Link to="/login"><button>Entrar</button></Link>
-              <Link to="/register"><button>Cadastro</button></Link>
+              <Link to="/login"><Button>Entrar</Button></Link>
+              <Link to="/register"><Button>Cadastro</Button></Link>
             </>
         </div>
       </header>

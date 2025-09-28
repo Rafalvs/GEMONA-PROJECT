@@ -1,14 +1,11 @@
-import Header from "../../components/layout/Header"
-import Footer from "../../components/layout/Footer"
+import Layout from "../../components/layout/Layout"
 
 export default function CreateBusiness(){
     return(
-        <>
-            <Header />
-                <main>
-                    <h2>Business</h2>
-                </main>
-            <Footer />
-        </>
+        <Layout>
+            <main>
+                <h2>Business</h2>
+            </main>
+        </Layout>
     )
 }

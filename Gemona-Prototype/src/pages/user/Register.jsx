@@ -1,15 +1,13 @@
-import Header from "../../components/layout/Header"
-import Footer from "../../components/layout/Footer"
+import Layout from "../../components/layout/Layout"
 import { Link } from "react-router-dom"
 
 export default function Register(){
     return(
-        <>
-            <Header />
-                <main>
-                    <form className="form-center">
-                        <div className="form-group">
-                            <label htmlFor="nameInput">Nome</label>
+        <Layout>
+            <main>
+                <form className="form-center">
+                    <div className="form-group">
+                        <label htmlFor="nameInput">Nome</label>
                             <input name="nameInput" id="nameInput" type="text" />
                         </div>
                         <div className="form-group">
@@ -42,7 +40,6 @@ export default function Register(){
                         <Link to="/Login"><button>Entrar</button></Link>
                     </form>
                 </main>
-            <Footer />
-        </>
+        </Layout>
     )
 }

@@ -1,17 +1,15 @@
 import { Link } from 'react-router-dom';
 
-import Header from "../../components/layout/Header"
-import Footer from "../../components/layout/Footer"
+import Layout from '../../components/layout/Layout';
 
 export default function Login(){
     return(
-        <>
-            <Header />
-                <main>
-                    <form className="form-center">
-                        <div className="form-group">
-                            <label htmlFor="userInput">Usuário</label>
-                            <input name="userInput" id="userInput" type="text" />
+        <Layout>
+            <main>
+                <form className="form-center">
+                    <div className="form-group">
+                        <label htmlFor="userInput">Usuário</label>
+                        <input name="userInput" id="userInput" type="text" />
                         </div>
                         <div className="form-group">
                             <label htmlFor="passwordInput">Senha</label>
@@ -22,7 +20,6 @@ export default function Login(){
                         <Link to="/register"><button>Cadastre-se</button></Link>
                     </form>
                 </main>
-            <Footer />
-        </>
+            </Layout>
     )
 }

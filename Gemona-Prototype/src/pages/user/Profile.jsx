@@ -1,16 +1,13 @@
-import Header from "../../components/layout/Header"
-import Footer from "../../components/layout/Footer"
+import Layout from "../../components/layout/Layout"
 
 export default function Profile(){
     return(
-        <>
-            <Header />
-                <main>
-                   <img id="profilePic"></img>
-                   <p id="username">Nome do Usuário</p>
+        <Layout>
+            <main>
+                <img id="profilePic"></img>
+                <p id="username">Nome do Usuário</p>
 
-                </main>
-            <Footer />
-        </>
+            </main>
+        </Layout>
     )
 }
