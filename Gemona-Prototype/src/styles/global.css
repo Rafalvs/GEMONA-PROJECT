@@ -1,3 +1,48 @@
+@layer base {
+  :root {
+    --primary-bg: #05315f;
+    --header-footer-bg: #ffecd1;
+    --primary-btn-bg: #15616d;
+    --primary-btn-hover: #f48f42;
+    --link-color: #ffecd1;
+    --link-hover: #e5e5e5;
+    
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    background-color: var(--primary-bg);
+  }
+
+  body {
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@layer components {
+  .custom-button {
+    @apply px-4 py-2 bg-[#15616d] text-white rounded-lg transition-colors hover:bg-[#f48f42];
+  }
+  
+  .custom-input {
+    @apply px-2 py-1 bg-white text-gray-700 rounded border-0 outline-0;
+  }
+
+  .form-group {
+    @apply text-white flex flex-col items-center mb-3;
+  }
+}
+
+@layer utilities {
+  .form-center {
+    @apply flex flex-col items-center justify-center gap-5;
+  }
+}
+
+/* Estilos específicos do projeto (mantidos fora das layers) */
 .services-layout {
   display: flex;
   align-items: flex-start;
@@ -12,7 +57,7 @@
 .filters {
   min-width: 260px;
   background: #ffffff;
-  color:#05315f;
+  color: #05315f;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   padding: 2rem 1rem;
@@ -38,7 +83,7 @@
 }
 
 .service-box:hover {
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
 .service-box h4 {
@@ -51,64 +96,6 @@
   margin: 0;
   color: #444;
   font-size: 1em;
-}
-
-.form-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1.2em;
-}
-
-.form-group {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 0.8em;
-}
-
-input[type="checkbox"] {
-  accent-color: #15616d;
-  width: 18px;
-  height: 18px;
-  border-radius: 4px;
-  border: 2px solid #15616d;
-  margin-right: 8px;
-  vertical-align: middle;
-  cursor: pointer;
-  transition: box-shadow 0.2s;
-}
-
-
-label {
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-}
-    
-:root {
-  --primary-bg: #05315f;
-  --header-footer-bg: #ffecd1;
-  --primary-btn-bg: #15616d;
-  --primary-btn-hover: #f48f42;
-  --link-color: #ffecd1;
-  --link-hover: #e5e5e5;
-  
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  
-  color-scheme: light dark;
-  background-color: var(--primary-bg);
-}
-
-body {
-  margin: 0;
-  width: 100%;
-  justify-content: center;
-  text-align: center;
 }
 
 #home {
@@ -176,6 +163,7 @@ a {
   font-weight: 500;
   text-decoration: inherit;
 }
+
 a:hover {
   color: var(--link-hover);
 }
@@ -186,56 +174,6 @@ a:hover {
   margin: 4px;
 }
 
-
-input{
-  border: 0;
-  outline: 0;
-  color: rgb(60, 66, 87);
-  background-color: rgb(255, 255, 255);
-  border-radius: 4px;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  margin: 1%;
-  padding: 4px 8px;
-  min-height: 28px;
-  vertical-align: middle;
-  transition: background-color 0.24s ease, box-shadow 0.24s ease;
-  transition-property: background-color, box-shadow;
-  transition-duration: 0.24s, 0.24s;
-  transition-timing-function: ease, ease;
-  transition-delay: 0s, 0s;
-}
-
-  
-button {
-  color: white;
-  border-radius: 8px;
-  border: 1px solid transparent;
-  margin: 0.5em 0.5em;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #15616d;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-button:visited {
-  color: #e5e5e5;
-}
-
-input:hover, button:hover {
-  border-color: #f48f42;
-  box-shadow: #f48f42 0 0 6px;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 8px auto -webkit-focus-ring-color;
-}
-
 ul {
   display: inline-block;
   gap: 1rem;
@@ -244,12 +182,12 @@ ul {
   margin: 1% 4% 1px 4%;
 }
 
-.filter-section{
+.filter-section {
   text-align: left;
 }
 
 .filter-section label {
-  color:#05315f;
+  color: #05315f;
   display: inline-block;
   font-size: 1rem;
   margin-right: 0.2em;
@@ -276,7 +214,6 @@ ul {
   flex-wrap: wrap;
   gap: 0.1rem;
   align-items: center;
-
 }
 
 .category-list {
@@ -285,7 +222,7 @@ ul {
   gap: 1rem;
   list-style: none;
   padding: 0;
-  margin: 1% 4% 2.5em 4%; /* aumenta o espaçamento inferior */
+  margin: 1% 4% 2.5em 4%;
   justify-content: center;
 }
 
@@ -305,15 +242,4 @@ h2 {
 header a {
   display: inline-block;
   height: 100%;
-}
-
-header a button {
-  width: 100%;
-  height: 100%;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-}
-
-label, p {
-  color: white;
 }

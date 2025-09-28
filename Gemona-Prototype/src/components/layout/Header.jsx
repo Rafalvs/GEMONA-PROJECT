@@ -28,8 +28,16 @@ export default function Header() {
         </div>
         <div className="header-right">
             <>
-              <Link to="/login"><Button>Entrar</Button></Link>
-              <Link to="/register"><Button>Cadastro</Button></Link>
+              <Link to="/login">
+                <Button variant="primary" className="w-full">
+                Entrar
+                </Button>
+              </Link>
+              <Link to="/register">
+                <Button variant="secondary" className="w-full">
+                Cadastro
+                </Button>
+              </Link>
             </>
         </div>
       </header>
