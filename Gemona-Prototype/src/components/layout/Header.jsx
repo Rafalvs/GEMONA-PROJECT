@@ -20,7 +20,7 @@ export default function Header() {
       <header>
         <div className="header-left">
           <Link to="/">
-            <img id="logo" src={logo} alt="Logo" />
+            <img id="logo" src={logo} alt="Logo" />Gêmona
           </Link>
         </div>
         <div className="header-center">

@@ -1,17 +1,10 @@
-@layer base {
-  :root {
-    --primary-bg: #05315f;
-    --header-footer-bg: #ffecd1;
-    --primary-btn-bg: #15616d;
-    --primary-btn-hover: #f48f42;
-    --link-color: #ffecd1;
-    --link-hover: #e5e5e5;
-    
+:root {
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
     color-scheme: light dark;
-    background-color: var(--primary-bg);
+background: #05315F;
+background: linear-gradient(175deg, rgba(5, 49, 95, 1) 30%, rgba(0, 0, 0, 1) 100%);
   }
 
   body {
@@ -20,29 +13,7 @@
     justify-content: center;
     text-align: center;
   }
-}
 
-@layer components {
-  .custom-button {
-    @apply px-4 py-2 bg-[#15616d] text-white rounded-lg transition-colors hover:bg-[#f48f42];
-  }
-  
-  .custom-input {
-    @apply px-2 py-1 bg-white text-gray-700 rounded border-0 outline-0;
-  }
-
-  .form-group {
-    @apply text-white flex flex-col items-center mb-3;
-  }
-}
-
-@layer utilities {
-  .form-center {
-    @apply flex flex-col items-center justify-center gap-5;
-  }
-}
-
-/* Estilos específicos do projeto (mantidos fora das layers) */
 .services-layout {
   display: flex;
   align-items: flex-start;
@@ -118,7 +89,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--header-footer-bg);
+  background-color: #ffecd1;
   color: black;
   padding: 14px 16px;
   font-size: 17px;
@@ -152,7 +123,7 @@ header {
 }
 
 header, footer {
-  background-color: var(--header-footer-bg);
+  background-color: #ffecd1;
   color: black;
   padding: 14px 16px;
   font-size: 17px;
