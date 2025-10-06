@@ -1,0 +1,265 @@
+import {
+    Utensils,
+    Wrench,
+    Hammer,
+    HeartPulse,
+    Car,
+    Book,
+    Home,
+    Calendar,
+    Shirt,
+    Briefcase,
+    Palette,
+    Monitor,
+    Shield,
+    Droplets,
+    TreeDeciduous,
+    SprayCan,
+    Baby,
+    CarFront,
+    Scissors,
+    Brain,
+    Code,
+    Bug,
+    Salad,
+    Calculator,
+    Flower,
+    Building,
+    UserRoundCog,
+    ChefHat,
+    Construction,
+    Dumbbell,
+    Laptop,
+    PencilRuler,
+    Beer,
+} from "lucide-react"
+import type { CategorieT } from "../types/categories"
+
+export const categories: CategorieT[] = [
+    {
+        name: "Alimentício",
+        icon: Utensils,
+        description:
+            "Serviços de alimentação e culinária, incluindo buffets e entregas.",
+    },
+    {
+        name: "Assistência Técnica",
+        icon: Wrench,
+        description:
+            "Reparo e manutenção de eletrodomésticos, eletrônicos e outros equipamentos.",
+    },
+    {
+        name: "Reparos e Reformas",
+        icon: Hammer,
+        description:
+            "Serviços para construção, renovação e pequenos consertos em residências e comércios.",
+    },
+    {
+        name: "Saúde",
+        icon: HeartPulse,
+        description:
+            "Profissionais e serviços dedicados ao bem-estar físico e mental.",
+    },
+    {
+        name: "Veículos",
+        icon: Car,
+        description:
+            "Manutenção, reparos, limpeza e outros serviços para carros, motos e caminhões.",
+    },
+    {
+        name: "Educação",
+        icon: Book,
+        description:
+            "Aulas particulares, reforço escolar, idiomas e consultoria educacional.",
+    },
+    {
+        name: "Serviços Domésticos",
+        icon: Home,
+        description:
+            "Limpeza, organização, jardinagem e cuidados gerais para o seu lar.",
+    },
+    {
+        name: "Eventos",
+        icon: Calendar,
+        description:
+            "Planejamento, organização e execução de festas, reuniões e celebrações.",
+    },
+    {
+        name: "Moda e Beleza",
+        icon: Shirt,
+        description:
+            "Cuidados pessoais, estética, vestuário e consultoria de imagem.",
+    },
+    {
+        name: "Consultoria",
+        icon: Briefcase,
+        description:
+            "Aconselhamento e expertise profissional em diversas áreas de negócio e pessoal.",
+    },
+    {
+        name: "Design",
+        icon: Palette,
+        description:
+            "Criação de projetos visuais, gráficos, de interiores e identidade de marca.",
+    },
+    {
+        name: "Tecnologia",
+        icon: Monitor,
+        description:
+            "Suporte técnico, desenvolvimento de software, redes e infraestrutura de TI.",
+    },
+    {
+        name: "Segurança",
+        icon: Shield,
+        description:
+            "Instalação e manutenção de sistemas de alarme, monitoramento e vigilância.",
+    },
+]
+
+export const mostSearchedServices = [
+    {
+        name: "Engenheiro",
+        icon: Construction,
+        description:
+            "Projetos, cálculos e acompanhamento de obras residenciais, comerciais e industriais.",
+    },
+    {
+        name: "Cozinheira",
+        icon: ChefHat,
+        description:
+            "Preparação de refeições, cardápios personalizados e serviços para eventos ou famílias.",
+    },
+    {
+        name: "Manicure e Pedicure",
+        icon: SprayCan,
+        description:
+            "Cuidados com unhas, esmaltação, design e tratamentos para mãos e pés.",
+    },
+    {
+        name: "Personal Trainer",
+        icon: Dumbbell,
+        description:
+            "Treinos personalizados, acompanhamento físico e orientação para saúde e bem-estar.",
+    },
+    {
+        name: "Cabeleireiros",
+        icon: Scissors,
+        description:
+            "Cortes, coloração, hidratação, penteados e tratamentos capilares.",
+    },
+    {
+        name: "Nutricionista",
+        icon: Salad,
+        description:
+            "Consultoria alimentar, planos nutricionais e acompanhamento de dietas.",
+    },
+    {
+        name: "Dedetizador",
+        icon: Bug,
+        description:
+            "Controle de pragas, desinsetização e serviços para residências e empresas.",
+    },
+    {
+        name: "Motorista com Veículo Próprio",
+        icon: CarFront,
+        description:
+            "Transporte executivo, viagens, entregas e serviços personalizados.",
+    },
+    {
+        name: "Assistência para Notebooks",
+        icon: Laptop,
+        description:
+            "Manutenção, reparos, upgrades e suporte técnico para notebooks.",
+    },
+    {
+        name: "Bartenders",
+        icon: Beer,
+        description:
+            "Preparação de drinks, coquetéis e atendimento em festas e eventos.",
+    },
+    {
+        name: "Arquitetos",
+        icon: Building,
+        description:
+            "Projetos arquitetônicos, decoração, reformas e consultoria de ambientes.",
+    },
+    {
+        name: "Criação de Logos",
+        icon: PencilRuler,
+        description:
+            "Design de logotipos, identidade visual e branding para empresas e profissionais.",
+    },
+    {
+        name: "Encanador",
+        icon: Droplets,
+        description:
+            "Instalação e reparo de sistemas hidráulicos, vazamentos e desentupimentos.",
+    },
+    {
+        name: "Marceneiro",
+        icon: TreeDeciduous,
+        description:
+            "Fabricação e reparo de móveis sob medida, portas e estruturas de madeira.",
+    },
+    {
+        name: "Mecânico",
+        icon: UserRoundCog,
+        description:
+            "Manutenção e reparo de veículos automotores, desde motores a freios.",
+    },
+    {
+        name: "Desentupidor",
+        icon: Hammer,
+        description:
+            "Serviços especializados em desobstrução de tubulações e encanamentos.",
+    },
+    {
+        name: "Diarista",
+        icon: Home,
+        description:
+            "Limpeza geral e organização de ambientes residenciais e comerciais por dia.",
+    },
+    {
+        name: "Babá",
+        icon: Baby,
+        description:
+            "Cuidados infantis, acompanhamento e atividades para crianças de todas as idades.",
+    },
+    {
+        name: "Psicólogo",
+        icon: Brain,
+        description:
+            "Aconselhamento e terapia para saúde mental, bem-estar emocional e desenvolvimento pessoal.",
+    },
+    {
+        name: "Desenvolvedor",
+        icon: Code,
+        description:
+            "Criação de softwares, websites, aplicativos e soluções tecnológicas personalizadas.",
+    },
+    {
+        name: "Cabeleireiro (especializado)",
+        icon: Scissors,
+        description:
+            "Serviços avançados de cortes, tratamentos e coloração capilar.",
+    },
+    {
+        name: "Contador",
+        icon: Calculator,
+        description:
+            "Serviços de contabilidade, declaração de impostos e consultoria financeira para pessoas e empresas.",
+    },
+    {
+        name: "Jardinagem",
+        icon: Flower,
+        description:
+            "Criação e manutenção de jardins, poda, paisagismo e cuidados com plantas.",
+    },
+    {
+        name: "Alfaite",
+        icon: Shirt,
+        description:
+            "Confecção e ajuste de roupas sob medida, reparos e reformas de vestuário.",
+    },
+
+]
