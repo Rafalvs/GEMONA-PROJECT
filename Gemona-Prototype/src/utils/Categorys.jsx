@@ -31,7 +31,8 @@
       <div>
         <ul>
           {data.map(item => (
-            <li key={item.name}> {/* Ensure a unique 'key' prop is provided */}
+            <li>
+              <h1> {item.name}</h1>  
               <p>{item.description}</p>
             </li>
           ))}
