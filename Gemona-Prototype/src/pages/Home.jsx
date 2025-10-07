@@ -1,4 +1,5 @@
 import Layout from "../components/layout/Layout"
+import Categorys from "../utils/Categorys"
 
 export default function Home(){
     return(
@@ -7,7 +8,7 @@ export default function Home(){
                 <h2>Está buscando um serviço? Entenda como nossa plataforma funciona:</h2>
                 <p>Faça uma busca ou clique em uma das categorias abaixo, selecione o serviço desejado e entre em contato diretamente com o prestador.</p>
                 <h2>Categorias</h2>
-                // Placeholder para categorias
+                <Categorys/>
                 <h2>Serviços mais buscados</h2>
                 // Placeholder para serviços mais buscados
             </main>
