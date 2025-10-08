@@ -1,14 +1,17 @@
+    //json-server --watch db.json
+    
     import React, { useState, useEffect } from 'react';
 
-    export default function Categorys() {
+    export default function APIfetch(props) {
       const [data, setData] = useState([]);
       const [loading, setLoading] = useState(true);
       const [error, setError] = useState(null);
+      const endpoint = props.endpoint;
 
       useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await fetch('http://localhost:3000/categorias');
+            const response = await fetch(endpoint);
             if (!response.ok) {
               throw new Error(`HTTP error! status: ${response.status}`);
             }
