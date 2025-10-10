@@ -37,7 +37,7 @@ export default function Register(){
                             Pessoa Jurídica</label>
                         </div>
                         <button>Cadastrar</button>
-                        <Link to="/Login"><button>Entrar</button></Link>
+                        <Link to="/login"><button>Entrar</button></Link>
                     </form>
                 </main>
         </Layout>

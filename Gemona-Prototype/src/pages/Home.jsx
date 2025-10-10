@@ -9,11 +9,11 @@ export default function Home(){
     return(
         <Layout>
             <main id="home">
-                <h2>Está buscando um serviço? Entenda como nossa plataforma funciona:</h2>
+                <h3>Está buscando um serviço? Entenda como nossa plataforma funciona:</h3>
                 <p>Faça uma busca ou clique em uma das categorias abaixo, selecione o serviço desejado e entre em contato diretamente com o prestador.</p>
-                <h2>Categorias</h2>
+                <h3>Categorias</h3>
                 <APIfetch endpoint={epCategorias}/>
-                <h2>Serviços mais buscados</h2>
+                <h3>Serviços mais buscados</h3>
                 <APIfetch endpoint={epServicos}/>
             </main>
         </Layout>

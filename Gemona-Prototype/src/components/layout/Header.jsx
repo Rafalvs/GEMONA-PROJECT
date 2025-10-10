@@ -15,6 +15,9 @@ export default function Header() {
       }
   };
   
+  const isLoginPage = location.pathname === '/login';
+  const isRegisterPage = location.pathname === '/register';
+
   return (
     <>
       <header>
@@ -27,10 +30,12 @@ export default function Header() {
           <input type="text" placeholder="Busca" onKeyDown={handleSearch} />
         </div>
         <div className="header-right">
+          {!isLoginPage && !isRegisterPage && (
             <>
               <Link to="/login"><Button>Entrar</Button></Link>
               <Link to="/register"><Button>Cadastro</Button></Link>
             </>
+          )}
         </div>
       </header>
     </>
